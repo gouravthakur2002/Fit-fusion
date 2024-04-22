@@ -18,7 +18,7 @@ const port = process.env.PORT || 3000;
 
 
 
-mongoose.connect("mongodb+srv://gouravjio80:p3wySBvoa2V6JZpw@cluster0.wnefnkd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" , {
+mongoose.connect("mongodb+srv://gouravjio80:gouravthakur2002@cluster0.15fztxq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" , {
   
 }).then(() => {
   console.log(`Connection to MongoDB successful`);
@@ -107,6 +107,12 @@ app.get('/payment', function (req, res) {
 })
 app.get('/womenCourse', function (req, res) {
   res.render("womenCourse");
+})
+app.get('/login', function (req, res) {
+  res.render("login");
+})
+app.get('/register', function (req, res) {
+  res.render("register");
 })
 
 
